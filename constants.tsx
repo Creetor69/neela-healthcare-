@@ -8,13 +8,14 @@ export const CLINIC_INFO = {
   doctor: "Dr. Manoj A G",
   qualifications: "MBBS, MD, DNB, PGDGM",
   specialization: "General Physician & Internal Medicine Specialist",
-  address: "No 404, Opposite to Mantri Alpyne Uttarahalli kengeri main road, Dr, vishnuvardhana road, Bsk 5th stage, Bengaluru, Karnataka 560061",
-  phone: "074113 97077",
-  hours: "Monday - Sunday: 6:00 PM - 9:30 PM",
+  address: "Neela healthcare and diagnostics, No 404, 8th main road, Opposite to mantri alpyne, Dr. Vishnuvardhan road, Vaddarapalya, Banashankari 5th stage, Bangalore - 560061, Karnataka",
+  phone: "7019490896",
+  email: "neelahealthcarediagnostics@gmail.com",
+  hours: "Monday - Sunday: 8:00 AM - 10:00 PM",
   googleRating: 5.0,
   reviewCount: 35,
   googleMapsShareUrl: "https://share.google/5qU0acRUkoq1Bi10l",
-  appointmentLink: "https://palmpower.in/" // Placeholder for Palm Power link
+  appointmentLink: "https://neelahealth.palmpower.in/#_bookAppointment"
 };
 
 export const SERVICES: Service[] = [
@@ -47,6 +48,30 @@ export const SERVICES: Service[] = [
     title: 'Geriatric Care',
     description: 'Comprehensive health assessment and chronic disease management for elderly patients. "Focused on improving quality of life, independence, and healthy aging."',
     icon: 'HeartPulse'
+  },
+  {
+    id: 'pediatric-care',
+    title: 'Pediatric & Pediatric Oncology Care',
+    description: 'Comprehensive general pediatric care and specialized pediatric oncology expert services.',
+    icon: 'Stethoscope'
+  },
+  {
+    id: 'ent-care',
+    title: 'ENT Care',
+    description: 'Comprehensive diagnosis and treatment for ear, nose, throat, and related structures.',
+    icon: 'Stethoscope'
+  },
+  {
+    id: 'surgery-care',
+    title: 'General Surgery Care',
+    description: 'Counseling and expert consultation for general surgical cases and minor health procedures.',
+    icon: 'Stethoscope'
+  },
+  {
+    id: 'ophthalmology',
+    title: 'Ophthalmology',
+    description: 'Premium eye care consultation, checks, diagnostics, and professional advice.',
+    icon: 'Stethoscope'
   },
   {
     id: 'lab-services',

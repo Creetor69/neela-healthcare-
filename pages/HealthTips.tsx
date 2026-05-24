@@ -62,7 +62,12 @@ const healthLinks = [
 const HealthTips: React.FC = () => {
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-2xl md:text-3xl font-bold text-center mb-6">Health Tips & Articles</h1>
+      <div className="text-center max-w-2xl mx-auto mb-8">
+        <h1 className="text-2xl md:text-3xl font-bold text-slate-900 mb-3">Health Tips & Articles</h1>
+        <p className="text-xs md:text-sm text-slate-600 leading-relaxed">
+          Expert recommendations, wellness guidance, and educational medical articles authored and shared by <span className="font-semibold text-slate-900">Dr. Manoj A G</span> across leading national newspapers, digital media, and health columns.
+        </p>
+      </div>
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {healthLinks.map((link, index) => (
           <a href={link.url} key={index} target="_blank" rel="noopener noreferrer" className="block bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition-shadow duration-300 border border-slate-100">

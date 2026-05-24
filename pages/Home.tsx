@@ -10,8 +10,7 @@ import {
   MapPin, 
   Clock, 
   ExternalLink, 
-  Heart, 
-  Activity, 
+  Activity,  
   Users, 
   Award,
   CheckCircle2,
@@ -137,54 +136,54 @@ const Home: React.FC = () => {
       </section>
 
       {/* Certified Clinic & Live Pharmacy Section (As per User Image) */}
-      <section className="relative -mt-10 md:-mt-16 z-30 px-4 md:px-6">
+      <section className="relative -mt-6 md:-mt-8 z-30 px-4 md:px-6">
         <div className="container mx-auto max-w-6xl">
-          <div className="bg-white rounded-[40px] md:rounded-[60px] shadow-2xl border border-slate-100 p-6 md:p-10">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-              <div className="flex items-center space-x-5">
-                <div className="w-16 h-16 bg-sky-100 rounded-3xl flex items-center justify-center text-sky-600 shadow-inner">
-                  <ShieldCheck size={36} />
+          <div className="bg-white rounded-2xl md:rounded-3xl shadow-xl border border-slate-100 p-4 md:p-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 bg-sky-100 rounded-xl flex items-center justify-center text-sky-600 shadow-inner shrink-0">
+                  <ShieldCheck size={20} />
                 </div>
                 <div>
-                  <div className="text-xl font-black text-slate-900 leading-tight">Certified Clinic</div>
-                  <div className="text-xs text-slate-400 font-bold uppercase tracking-widest">Quality Assured</div>
+                  <div className="text-sm md:text-base font-bold text-slate-900 leading-tight">Certified Clinic</div>
+                  <div className="text-[9px] text-slate-400 font-bold uppercase tracking-wider">Quality Assured</div>
                 </div>
               </div>
               
-              <div className="flex items-center space-x-5 justify-center md:border-x md:border-slate-100 px-4">
-                <div className="w-16 h-16 bg-emerald-100 rounded-3xl flex items-center justify-center text-emerald-600 shadow-inner">
-                  <Activity size={36} />
+              <div className="flex items-center space-x-3 justify-start md:border-x md:border-slate-100 px-4">
+                <div className="w-10 h-10 bg-emerald-100 rounded-xl flex items-center justify-center text-emerald-600 shadow-inner shrink-0">
+                  <Activity size={20} />
                 </div>
                 <div>
-                  <div className="text-xl font-black text-slate-900 leading-tight">Live Pharmacy</div>
-                  <div className="text-xs text-slate-400 font-bold uppercase tracking-widest">Now Operational</div>
+                  <div className="text-sm md:text-base font-bold text-slate-900 leading-tight">Live Pharmacy & Diagnostics</div>
+                  <div className="text-[9px] text-slate-400 font-bold uppercase tracking-wider">Now Operational</div>
                 </div>
               </div>
 
               <div className="flex justify-center md:justify-end">
-                <div className="flex -space-x-4">
+                <div className="flex -space-x-2">
                   {[1, 2, 3, 4, 5, 6].map((i) => (
-                    <div key={i} className="w-12 h-12 rounded-full border-4 border-white bg-slate-100 overflow-hidden shadow-md">
+                    <div key={i} className="w-8 h-8 rounded-full border-2 border-white bg-slate-100 overflow-hidden shadow-md">
                       <img src={`https://picsum.photos/seed/trust${i}/100/100`} alt="Trust" className="w-full h-full object-cover" />
                     </div>
                   ))}
-                  <div className="w-12 h-12 rounded-full border-4 border-white bg-sky-600 flex items-center justify-center text-xs font-black text-white shadow-md">
+                  <div className="w-8 h-8 rounded-full border-2 border-white bg-sky-600 flex items-center justify-center text-[10px] font-black text-white shadow-md">
                     +1k
                   </div>
                 </div>
               </div>
             </div>
             
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-10 pt-10 border-t border-slate-50">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-4 pt-4 border-t border-slate-50">
               {[
-                { label: 'Experience', val: '13+', icon: <Award className="text-sky-500" size={24} /> },
-                { label: 'Patients', val: '1000+', icon: <Users className="text-emerald-500" size={24} /> },
-                { label: 'Rating', val: '5.0/5', icon: <Star className="text-amber-500" fill="currentColor" size={24} /> }
+                { label: 'Experience', val: '13+', icon: <Award className="text-sky-500" size={18} /> },
+                { label: 'Patients', val: '1000+', icon: <Users className="text-emerald-500" size={18} /> },
+                { label: 'Rating', val: '5.0/5', icon: <Star className="text-amber-500" fill="currentColor" size={18} /> }
               ].map((stat, i) => (
-                <div key={i} className="flex flex-col items-center text-center p-4 bg-slate-50/50 rounded-2xl sm:bg-transparent">
-                  <div className="mb-2">{stat.icon}</div>
-                  <div className="text-2xl md:text-4xl font-black text-slate-900">{stat.val}</div>
-                  <div className="text-[10px] md:text-xs font-black text-slate-400 uppercase tracking-widest">{stat.label}</div>
+                <div key={i} className="flex flex-col items-center text-center p-2 bg-slate-50/50 rounded-xl sm:bg-transparent">
+                  <div className="mb-1">{stat.icon}</div>
+                  <div className="text-xl md:text-2xl font-black text-slate-900">{stat.val}</div>
+                  <div className="text-[9px] font-bold text-slate-400 uppercase tracking-widest">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -203,9 +202,9 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="md:col-span-2 bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col md:flex-row items-center gap-6">
               <div className="md:w-1/2">
-                <h3 className="text-xl font-bold text-slate-900 mb-3">Physician-Led Care</h3>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">Physician & Pathologist Led Care</h3>
                 <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                  Led by MD & DNB specialists in Geriatric Medicine and Diabetology.
+                  Led by MD & DNB Physician specialists and senior Pathologist-led diagnostic team.
                 </p>
                 <ul className="space-y-2">
                   {[
@@ -279,10 +278,10 @@ const Home: React.FC = () => {
                 
                 <div className="grid grid-cols-2 gap-2 mb-4">
                   {[
-                    { title: 'Pathology', desc: 'Expert analysis' },
-                    { title: 'Biochemistry', desc: 'Metabolic panels' },
-                    { title: 'Hematology', desc: 'Blood analysis' },
-                    { title: 'Microbiology', desc: 'Infection diagnostics' }
+                    { title: 'Lab Pathology & Biochemistry', desc: 'Expert analysis & blood tests' },
+                    { title: 'Digital X-Ray', desc: 'Routine & advanced imaging' },
+                    { title: 'Ultrasound (USG)', desc: 'Abdomen, Pelvis, Obstetric scans' },
+                    { title: 'TMT & ECG', desc: 'Treadmill and Cardiac risk assessments' }
                   ].map((item, i) => (
                     <div key={i} className="flex items-start space-x-1.5">
                       <div className="mt-0.5 bg-sky-100 text-sky-600 p-0.5 rounded-full">
@@ -303,7 +302,7 @@ const Home: React.FC = () => {
               </div>
               
               <div className="lg:w-1/2 relative">
-                <div className="relative z-10 rounded-xl overflow-hidden shadow-xl h-48 md:h-64">
+                <div className="relative z-10 rounded-xl overflow-hidden shadow-xl h-40 md:h-52">
                   <img src="https://picsum.photos/seed/lab-tech/800/1000" alt="Laboratory" className="w-full h-full object-cover" />
                 </div>
               </div>

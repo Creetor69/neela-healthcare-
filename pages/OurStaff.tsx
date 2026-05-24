@@ -37,6 +37,7 @@ const OurStaff: React.FC = () => {
       name: "DR. MANOJ A G",
       role: "Consultant Physician & Specialist",
       image: "https://picsum.photos/seed/dr-manoj-staff/600/800",
+      bio: "Dr. Manoj A G is a highly distinguished Consultant Physician and Internal Medicine Specialist with over 13 years of stellar clinical experience. He excels in managing complex metabolic disorders, particularly Diabetes and Hypertension, and is highly recognized for his advanced specialized expertise in Geriatric Care and Diabetology. Currently serving as an Associate Professor of General Medicine at PESUIMSR, he has also served as an Assistant Professor at ESIC MC PGIMSR. Dr. Manoj combines extensive academic research, with multiple indexed publications and ICMR grants, with a compassionate, patient-first approach to delivering comprehensive adult healthcare.",
       qualifications: [
         "MBBS - Mysore Medical College & Research Institute",
         "MD General Medicine - SDUMC under SDUAHER",
@@ -46,12 +47,13 @@ const OurStaff: React.FC = () => {
       ],
       achievements: [
         "Over 13 years of clinical excellence in internal medicine",
+        "Associate Professor of General Medicine in PESUIMSR",
+        "Former Assistant Professor at ESIC MC PGIMSR, Rajajinagar",
         "Recipient of the ICMR Thesis Grant for academic excellence",
         "Awarded Best Poster at national conferences (KAPICON & APICON)",
         "Gold Medalist in Paediatrics (MMCRI)",
         "Published multiple research papers with 15+ citations",
-        "Best Outgoing Student (Cultural & Sports) – MMCRI",
-        "Assistant Professor at ESIC MC PGIMSR, Rajajinagar"
+        "Best Outgoing Student (Cultural & Sports) – MMCRI"
       ],
       expertise: [
         "Diabetes management & metabolic disorders",
@@ -66,7 +68,8 @@ const OurStaff: React.FC = () => {
       memberships: [
         "Karnataka Medical Council (KMC Registration No: 98987)",
         "Association of Physicians of India (API)",
-        "Indian Medical Association (IMA)"
+        "Indian Medical Association (IMA)",
+        "Indian Academy of Geriatrics"
       ],
       publications: [
         "Research papers in Geriatric Medicine",
@@ -75,8 +78,9 @@ const OurStaff: React.FC = () => {
     },
     {
       name: "DR. PRIYANKA K M",
-      role: "Chief Pathologist",
+      role: "Consultant Pathologist",
       image: "https://i.ibb.co/v4Z0v7vP/priyanka.jpg",
+      bio: "Dr. Priyanka K M is a highly skilled Consultant Pathologist with deep expertise in advanced diagnostic pathology, including cytology, histopathology, and comprehensive hematology analysis. Holding double board certifications with an MD from BGSGIMS and a DNB in Pathology, she is dedicated to providing high-precision, clinically correlated laboratory insights. Her commitment to quality and diagnostic precision plays a critical role in guiding accurate patient care, screening, and treatment pathways.",
       qualifications: [
         "MBBS",
         "MD Pathology - BGSGIMS",
@@ -96,11 +100,81 @@ const OurStaff: React.FC = () => {
       ],
       memberships: [
         "Karnataka Medical Council",
+        "Indian Medical Association (IMA)",
         "Relevant Pathology Associations"
       ],
       publications: [
         "Clinical case studies in Pathology",
         "Medical research contributions"
+      ]
+    },
+    {
+      name: "DR. PRERANA NESARGI",
+      role: "Consultant - Pediatric Oncology, Hematology & BMT",
+      image: "https://picsum.photos/seed/dr-prerana/600/800",
+      bio: "Dr. Prerana Nesargi is a brilliant Pediatric Oncologist, Hematologist, and Bone Marrow Transplant (BMT) Physician with a stellar academic and clinical record. A double University Gold Medalist in MBBS from Mysore Medical College and MD from Indira Gandhi Institute of Child Health, she completed her specialized DM in Pediatric Oncology from the prestigious Kidwai Memorial Institute of Oncology. Dr. Nesargi is highly acclaimed for her scholarly achievements, including presenting at top international pediatric hematology/oncology conferences like PHOCON and SIOP Asia, and publishing groundbreaking research indexed in prestigious journals such as Nature Scientific Reports. Her clinical work focuses on precision medicine, targeted therapies, and hematopoetic stem cell transplants to provide advanced cure rates for children.",
+      qualifications: [
+        "MBBS - Mysore Medical College, Mysore (University Gold Medalist)",
+        "MD Paediatrics - Indira Gandhi Institute of Child Health, Bengaluru (University Gold Medalist)",
+        "DM Pediatric Oncology - Kidwai Memorial Institute of Oncology, Bengaluru"
+      ],
+      achievements: [
+        "University Gold Medalist in MBBS and MD Paediatrics",
+        "Author of groundbreaking paper on Blood Parameters in Neonatal Sepsis published in NATURE SCIENTIFIC REPORTS journal",
+        "Presented research posters at premier PHO conferences such as PHOCON and SIOP ASIA",
+        "Regular Panelist and Guest Speaker at Academic Training workshops conducted by the PHO Chapter of IAP",
+        "Numerous research publications in indexed Pediatric, Pediatric Oncology, and Hematology journals"
+      ],
+      expertise: [
+        "Pediatric Oncology - Precision Oncology in Pediatric Solid Tumors and Leukemias",
+        "Targeted Therapy and Immunotherapy in Pediatric Brain Tumors",
+        "Haematology - Acquired and Congenital Anemias, Thrombocytopenias, and associated Primary Immunodeficiencies",
+        "Bone Marrow Transplant (BMT) - Allogeneic and Haploidentical Hematopoietic Stem Cell Transplants"
+      ],
+      memberships: [
+        "Karnataka Medical Council",
+        "Pediatric Hematology Oncology (PHO) Chapter of Indian Academy of Pediatrics (IAP)",
+        "Indian Medical Association (IMA)"
+      ],
+      publications: [
+        "Blood Parameters in Neonatal Sepsis - Nature Scientific Reports",
+        "Various publications in national and international indexed Pediatric and Hematology/Oncology journals"
+      ]
+    },
+    {
+      name: "DR. SACHIN P. ANGADI",
+      role: "Junior Consultant - Orthopaedic Surgery & Sports Medicine",
+      image: "https://picsum.photos/seed/dr-sachin/600/800",
+      bio: "Dr. Sachin P. Angadi is an exceptional Orthopaedic Surgery Junior Consultant and Sports Medicine Specialist. He holds a prestigious D.N.B in Orthopaedic Surgery and completed a specialized Fellowship in Sports Medicine & Arthroscopy under the mentorship of Dr. Rudraprasad M. S. He has gained extensive clinical training at premier, high-volume centers, including the renowned Ganga Medical Centre in Coimbatore. Dr. Angadi is highly skilled in advanced knee, shoulder, and hip arthroscopic procedures, robotic and conventional joint replacements (TKR, THR), spinal fusion surgery, and pediatric trauma, combining rigorous surgical precision with academic publications and research contributions.",
+      qualifications: [
+        "MBBS - JSS Medical College, Mysuru (2009 - 2015)",
+        "Diploma in Orthopaedic Surgery - S.D.U.M.C, Kolar (2017 - 2019)",
+        "D.N.B in Orthopaedic Surgery - Ganga Medical Centre, Coimbatore (2020 - 2022)",
+        "Fellowship in Sports Medicine & Arthroscopy - Prasad Ortho Care, Bangalore (2024)"
+      ],
+      achievements: [
+        "Completed prestigious Fellowship under the mentorship of Dr. Rudraprasad M. S. at Prasad Ortho Care",
+        "Trained in Joint Arthroplasty and Robotic TKR under Dr. Chandrasekar Chikkamuniyappa",
+        "Assisted in major spinal decompressions, fusions, and instrumented stabilizations under Spine Specialist Dr. Gowrishankar L.",
+        "Gained massive pediatric and complex trauma exposure at S.G.M.H, New Delhi, and Ganga Hospital under Dr. Srikanth",
+        "Published multiple high-impact thesis in premier journals and actively presents at state & national orthopaedic conferences"
+      ],
+      expertise: [
+        "Knee, Shoulder & Hip Arthroscopic reconstructions & repairs",
+        "ACL, PCL, and multiligament knee reconstructions and patellar dislocation management",
+        "Knee preserving and revision joint surgeries",
+        "Arthroscopic Bankart repair, Rotator Cuff repair, and Tendon Transfers for massive cuff tears",
+        "CTEV cast application and soft tissue deformity corrections for Clubfoot",
+        "Robotic & conventional joint replacement surgeries (TKR, THR)"
+      ],
+      memberships: [
+        "Indian Arthroscopy Society (IAS)",
+        "Bangalore Orthopaedic Society",
+        "Karnataka Orthopaedic Society"
+      ],
+      publications: [
+        "Thesis: The Role of Pre-Operative Pain Sensitivity Assessment In Predicting The Post-Operative Pain Severity, Analgesic Requirement And Recovery After Single Level Lumbar Fusion Surgeries - Published in THE SPINE JOURNAL",
+        "Functional outcome following arthroscopic anterior cruciate ligament reconstruction using quadrupled hamstring autograft - International Journal of Orthopaedics Sciences, 2019"
       ]
     },
     {

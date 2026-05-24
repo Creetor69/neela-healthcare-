@@ -59,8 +59,8 @@ const Contact: React.FC = () => {
                     <div className="bg-sky-50 text-sky-600 p-2 rounded-lg shrink-0"><Clock size={18} /></div>
                     <div>
                       <div className="font-bold text-slate-900 mb-0.5 text-xs">Consultation Hours</div>
-                      <div className="text-slate-600 text-[10px]">Mon - Sat: 5:00 PM - 9:00 PM</div>
-                      <div className="text-rose-500 text-[10px] font-bold">Closed on Sundays</div>
+                      <div className="text-slate-600 text-[10px]">{CLINIC_INFO.hours}</div>
+                      <div className="text-emerald-500 text-[10px] font-bold">Open 7 Days a Week</div>
                     </div>
                   </div>
                 </div>
@@ -123,6 +123,8 @@ const Contact: React.FC = () => {
                     <option className="bg-slate-900">Diabetes / BP Checkup</option>
                     <option className="bg-slate-900">Fever / Infection</option>
                     <option className="bg-slate-900">Senior Care</option>
+                    <option className="bg-slate-900">LAB Services / Blood Test</option>
+                    <option className="bg-slate-900">Ultrasound (USG)</option>
                     <option className="bg-slate-900">Other</option>
                   </select>
                 </div>
